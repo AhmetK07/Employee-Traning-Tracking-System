@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1148817d18814539ad2231da6556c2a8" Name="Diagram1">
+        <EntityTypeShape EntityType="EmployeeTrainingTrackingModel.Contact" Width="1.5" PointX="3" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployeeTrainingTrackingModel.Course" Width="1.5" PointX="3" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployeeTrainingTrackingModel.Department" Width="1.5" PointX="3" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployeeTrainingTrackingModel.Employee" Width="1.5" PointX="5.25" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployeeTrainingTrackingModel.Instructor" Width="1.5" PointX="0.75" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployeeTrainingTrackingModel.Manager" Width="1.5" PointX="5.25" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployeeTrainingTrackingModel.TrainingSponsor" Width="1.5" PointX="8.25" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployeeTrainingTrackingModel.WebRegister" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployeeTrainingTrackingModel.AbroadTraining" Width="1.5" PointX="10.5" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployeeTrainingTrackingModel.Privilige" Width="1.5" PointX="7.5" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployeeTrainingTrackingModel.Report" Width="1.5" PointX="7.5" PointY="2.25" IsExpanded="true" />
+        <AssociationConnector Association="EmployeeTrainingTrackingModel.FK_Employee_Contacts_Email" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployeeTrainingTrackingModel.FK_AbroadTraining_Course_CourseName" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployeeTrainingTrackingModel.FK_Course_Instructor" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployeeTrainingTrackingModel.FK_Employee_Course_CourseName" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployeeTrainingTrackingModel.FK_Instructor_Course_CourseName" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployeeTrainingTrackingModel.FK_Reports_Course" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployeeTrainingTrackingModel.FK_TrainingSponsor_Course" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployeeTrainingTrackingModel.FK_Department_Instructor" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployeeTrainingTrackingModel.FK_Department_Manager_DepartmentId" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployeeTrainingTrackingModel.FK_Manager_Department" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployeeTrainingTrackingModel.FK_Priviliges_Department" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployeeTrainingTrackingModel.FK_AbroadTraining_Employee1_EmployeeId" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployeeTrainingTrackingModel.FK_Reports_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployeeTrainingTrackingModel.FK_AbroadTraining_Employee_Instructor" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployeeTrainingTrackingModel.FK_Priviliges_Instructor" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployeeTrainingTrackingModel.FK_Reports_Instructor" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployeeTrainingTrackingModel.FK_TrainingSponsor_Instructor" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployeeTrainingTrackingModel.FK_Priviliges_Manager" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

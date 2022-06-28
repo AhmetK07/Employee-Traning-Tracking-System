@@ -1,0 +1,70 @@
+﻿@{
+    ViewBag.Title = "UserProfile";
+
+    if (Session["UserId"] == null)
+    {
+        Response.Redirect("~/Login/Login");
+    }
+}
+
+
+
+<html>
+
+<head>
+
+    <style>
+        .Box {
+            border: 2px solid black;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            border-radius: 25px;
+            color: snow;
+    </style>
+
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/MyStyle.css" rel="stylesheet" />
+</head>
+
+<body>
+
+        <div class="Column">
+            <div class="Card">
+                <img src="~/Content/Images/PngItem_2088629.png" alt="@Session["FirstName"]" style="width:100%">
+                <div class="Container">
+                    <h2>@Session["FirstName"] @Session["LastName"]</h2>
+                    <p class="Title">Your title: @Session["Professiontitle"]</p>
+                    <p>Your Id: @Session["UserId"]</p>
+                    <p>Your Telephone number:@Session["Telephone"] </p>
+                    <p>Your informations:@Session["Email"] </p>
+                    <p>Your Course: @Session["TrainingCourse"]</p>
+                    <a href="@Url.Action("RegisterCourses","Home")"><button class="Button">Register Courses</button></a>
+                    <a style="display:flex; justify-content:center; color:black" href="@Url.Action("LogOut", "Login")">LogOut</a>
+                </div>
+            </div>
+        </div>
+        @if (Session["TrainingCourse"] != null)
+        {
+
+            <div class="Column">
+                <div class="Card">
+                    <img src="~/Content/Images/speaking-course-img.png" alt="@Session["FirstName"]" style="width:100%">
+                    <div class="Container">
+                        <h2>@Session["FirstName"]</h2>
+                        <p>@Session["TrainingCourse"]</p>
+                    </div>
+                </div>
+            </div>
+   
+    }
+
+
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+</body>
+
+
+
+</html>
+

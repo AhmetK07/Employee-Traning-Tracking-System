@@ -1,0 +1,70 @@
+﻿@model _5001ProjectNew.Models.WebRegister
+@{
+    ViewBag.Title = "Login";
+}
+
+<html>
+
+<head>
+    <title>Login.</title>
+
+    <link href="~/Content/MyStyle.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <button type="button" class="TextButton"><div id="textbox">Hello.</div></button>
+
+    <div id="LoginDiv">
+        @using (Html.BeginForm("Authorize", "Login", FormMethod.Post))
+        {
+            <table>
+                <tr>
+                    <td></td>
+                    <td style="text-decoration:underline; font-family:Roboto; color:black; ">Training Tracking System</td>
+                </tr>
+                <tr>
+                    <td style="color: snow; font-family:Roboto;">
+                        @Html.LabelFor(model => model.Id)
+                    </td>
+                    <td style="color: black; font-family: Roboto;">
+                        @Html.EditorFor(model => model.Id)
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>@Html.ValidationMessageFor(model => model.Id)</td>
+                </tr>
+                <tr>
+                    <td style="color: snow; font-family: Roboto;">@Html.LabelFor(model => model.Password)</td>
+                    <td style="color: black; font-family: Roboto;">@Html.EditorFor(model => model.Password)</td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>@Html.ValidationMessageFor(model => model.Password)</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label class="field-validation-error">@Html.DisplayFor(model => model.LoginErrorMessage)</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" name="Id" value="Login" />
+                        <input type="reset" name="Id" value="Clear" />
+                    </td>
+                </tr>
+            </table>
+        }
+    </div>
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,57 @@
+﻿@{
+    ViewBag.Title = "About";
+
+    if (Session["UserId"] == null)
+    {
+        Response.Redirect("~/Login/Login");
+    }
+}
+<html>
+
+<head>
+
+    <link href="~/Content/MyStyle.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+        <div class="Row">
+            <div class="Column">
+                <div class="Card">
+                    <img src="~/Content/Images/media-file-code-900x500.png" alt="Bahar" style="width:100%">
+                    <div class="Container">
+                        <h2>Bahar Ilgen</h2>
+                        <p class="Title">Computer &amp; Scientist</p>
+                        <p>This course lets you have major programming ideas about development</p>
+                        <p>Bılgen@gmail.com</p>
+                        <a href="@Url.Action("RegisterCourses","Home")"><button style="margin:5px;" class="Button">Register Courses</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Column">
+                <div class="Card">
+                    <img src="~/Content/Images/AdobeStock_232427041.jpeg" alt="Gökberk" style="width:100%">
+                    <div class="Container">
+                        <h2>Gökberk Civardagezer</h2>
+                        <p class="Title">Architectural Design</p>
+                        <p>This course illustrates modern and traditional design ideas about design.</p>
+                        <p>Gökberkc@gmail.com</p>
+                        <a href="@Url.Action("RegisterCourses","Home")"><button style="margin:5px;" class="Button">Register Courses</button></a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+        <script src="~/Scripts/jquery.validate.min.js"></script>
+        <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    </div>
+
+
+</body>
+
+</html>

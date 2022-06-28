@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EmployeeTrainingTrackingModelStoreContainer" CdmEntityContainer="TrainingTrackingEntities">
+    <EntitySetMapping Name="Contacts">
+      <EntityTypeMapping TypeName="EmployeeTrainingTrackingModel.Contact">
+        <MappingFragment StoreEntitySet="Contacts">
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="ProfessionTitle" ColumnName="ProfessionTitle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Courses">
+      <EntityTypeMapping TypeName="EmployeeTrainingTrackingModel.Course">
+        <MappingFragment StoreEntitySet="Course">
+          <ScalarProperty Name="InsturctorId" ColumnName="InsturctorId" />
+          <ScalarProperty Name="CourseName" ColumnName="CourseName" />
+          <ScalarProperty Name="CourseCapacity" ColumnName="CourseCapacity" />
+          <ScalarProperty Name="CourseDuration_in_days_" ColumnName="CourseDuration(in days)" />
+          <ScalarProperty Name="TrainingLocation" ColumnName="TrainingLocation" />
+          <ScalarProperty Name="ApplianceCount" ColumnName="ApplianceCount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Departments">
+      <EntityTypeMapping TypeName="EmployeeTrainingTrackingModel.Department">
+        <MappingFragment StoreEntitySet="Department">
+          <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
+          <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+          <ScalarProperty Name="ManagerId" ColumnName="ManagerId" />
+          <ScalarProperty Name="InstructorId" ColumnName="InstructorId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="EmployeeTrainingTrackingModel.Employee">
+        <MappingFragment StoreEntitySet="Employee">
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="PassingStatus" ColumnName="PassingStatus" />
+          <ScalarProperty Name="ProfessionTitle" ColumnName="ProfessionTitle" />
+          <ScalarProperty Name="TrainingCourse" ColumnName="TrainingCourse" />
+          <ScalarProperty Name="TrainingLocation" ColumnName="TrainingLocation" />
+          <ScalarProperty Name="TrainingStart" ColumnName="TrainingStart" />
+          <ScalarProperty Name="TrainingEnd" ColumnName="TrainingEnd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Instructors">
+      <EntityTypeMapping TypeName="EmployeeTrainingTrackingModel.Instructor">
+        <MappingFragment StoreEntitySet="Instructor">
+          <ScalarProperty Name="InstructorId" ColumnName="InstructorId" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="ProfessionTitle" ColumnName="ProfessionTitle" />
+          <ScalarProperty Name="TrainingStart" ColumnName="TrainingStart" />
+          <ScalarProperty Name="TrainingEnd" ColumnName="TrainingEnd" />
+          <ScalarProperty Name="TrainingCourse" ColumnName="TrainingCourse" />
+          <ScalarProperty Name="TrainingLocation" ColumnName="TrainingLocation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Managers">
+      <EntityTypeMapping TypeName="EmployeeTrainingTrackingModel.Manager">
+        <MappingFragment StoreEntitySet="Manager">
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="ManagerId" ColumnName="ManagerId" />
+          <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
+          <ScalarProperty Name="ManagerRanking" ColumnName="ManagerRanking" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrainingSponsors">
+      <EntityTypeMapping TypeName="EmployeeTrainingTrackingModel.TrainingSponsor">
+        <MappingFragment StoreEntitySet="TrainingSponsor">
+          <ScalarProperty Name="SponsorName" ColumnName="SponsorName" />
+          <ScalarProperty Name="CourseName" ColumnName="CourseName" />
+          <ScalarProperty Name="CourseCapacity" ColumnName="CourseCapacity" />
+          <ScalarProperty Name="InstructorId" ColumnName="InstructorId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WebRegisters">
+      <EntityTypeMapping TypeName="EmployeeTrainingTrackingModel.WebRegister">
+        <MappingFragment StoreEntitySet="WebRegister">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="Professiontitle" ColumnName="Professiontitle" />
+          <ScalarProperty Name="TrainingCourse" ColumnName="TrainingCourse" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AbroadTrainings">
+      <EntityTypeMapping TypeName="EmployeeTrainingTrackingModel.AbroadTraining">
+        <MappingFragment StoreEntitySet="AbroadTraining">
+          <ScalarProperty Name="Language" ColumnName="Language" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Prerequisites" ColumnName="Prerequisites" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="InstructorId" ColumnName="InstructorId" />
+          <ScalarProperty Name="CourseName" ColumnName="CourseName" />
+          <ScalarProperty Name="CourseStart" ColumnName="CourseStart" />
+          <ScalarProperty Name="CourseEnd" ColumnName="CourseEnd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Priviliges">
+      <EntityTypeMapping TypeName="EmployeeTrainingTrackingModel.Privilige">
+        <MappingFragment StoreEntitySet="Priviliges">
+          <ScalarProperty Name="ManagerId" ColumnName="ManagerId" />
+          <ScalarProperty Name="InstructorId" ColumnName="InstructorId" />
+          <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
+          <ScalarProperty Name="ManagerRanking" ColumnName="ManagerRanking" />
+          <ScalarProperty Name="Authoraziton" ColumnName="Authoraziton" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reports">
+      <EntityTypeMapping TypeName="EmployeeTrainingTrackingModel.Report">
+        <MappingFragment StoreEntitySet="Reports">
+          <ScalarProperty Name="TrainingGrade" ColumnName="TrainingGrade" />
+          <ScalarProperty Name="CourseName" ColumnName="CourseName" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="InstuctorId" ColumnName="InstuctorId" />
+          <ScalarProperty Name="CourseStart" ColumnName="CourseStart" />
+          <ScalarProperty Name="CourseEnd" ColumnName="CourseEnd" />
+          <ScalarProperty Name="PassingStatus" ColumnName="PassingStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

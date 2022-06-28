@@ -1,0 +1,326 @@
+﻿body {
+    background-image: url("Images/19d89-cropped-hd-backgrounds-websites-350851-download-free-website-background-1920x1080-for-mobile-hd.jpg");
+}
+
+#SquareBox{
+    min-height:100vh;
+    display:flex;
+    position:relative;
+
+}
+
+.leftbox {
+    width: 50vw;
+    background-color: grey;
+    position: relative;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    box-shadow: 0 8px 16px 0 rgba(1, 0, 1, 0.8);
+}
+
+.rightbox {
+    width: 50vw;
+    background-color: tomato;
+    position: relative;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    box-shadow: 0 8px 16px 0 rgba(1, 0, 1, 0.8);
+}
+
+.disc{
+    width:16em; height:16em;
+    border-radius:50%;
+    background-color:white;
+    position:absolute;
+    top:50%; right:30%;
+    
+}
+
+.imgcenterbox {
+    position: relative;
+    margin: auto;
+    padding: 48px;
+}
+
+.imgcenterbox a{
+    z-index:-1;
+}
+
+.usagename {
+    position: relative;
+    text-align: center;
+    top: 45%;
+    font-family: Roboto;
+    font-size: 16px;
+    transition: .5s ease;
+    opacity: 0;
+}
+
+.disc:hover{
+    background-color:transparent;
+    opacity:60%;
+    transition: .5s ease;
+    border:2px solid black;
+    
+}
+
+
+#SquareBox:hover .imgcenterbox {
+    opacity: 0.6;
+    transition: .6s ease;
+}
+
+#SquareBox:hover .usagename {
+    opacity: 1;
+   
+}
+
+.TextButton {
+    display: block;
+    width: 100%;
+    border: 4px solid transparent;
+    background-color: black;
+    padding: 1px 2px;
+    font-size: 16px;
+    font-family: Roboto;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 4px;
+    border-radius: 25px;
+    box-shadow: 0 8px 16px 0 rgba(1, 0, 1, 0.8);
+    margin:10px;
+    left:100px;
+   
+}
+
+.TextButton:hover{
+    background-color:mintcream;
+    transition: .6s ease;
+    
+}
+
+    #textbox {
+        text-align: center;
+        color: white;
+    }
+
+
+#textbox:hover{
+    color:tomato;
+}
+
+.ClickEffect {
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    
+}
+
+.BgForm{
+    position:relative;
+    background-color:floralwhite;
+    border: 4px solid black;
+    border-radius: 50px;
+    margin:50px;
+    padding:15px 25px 25px 25px;
+    display:flex;
+    justify-content:center;
+    font-family:Roboto;
+    font-size:16px;
+    color:black;
+}
+
+#LoginDiv {
+    position: absolute;
+    height: auto;
+    width: auto;
+    left: 40%;
+    right: 40%;
+    border: 2px solid transparent;
+    transform: translate(5%, 85%);
+    padding: 35px;
+    box-shadow: 0 8px 16px 0 rgba(1, 0, 1, 0.8);
+    color: black;
+    background-color: black;
+    margin: 10px;
+    border-radius: 25px;
+}
+
+
+#LoginDiv label {
+        padding-right: 5px;
+    }
+
+#LoginDiv input {
+      margin-left: 50px
+}
+
+
+#RegisterDiv {
+    border: 2px solid black;
+    padding: 10px 10px;
+    box-shadow: 0 8px 16px 0 rgba(1, 0, 1, 0.6);
+    color: snow;
+    background-color: black;
+    margin: 10px;
+    border-radius: 25px;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 305px;
+}
+
+#RegisterDiv label{
+    padding-right:55px;
+}
+
+#RegisterDiv input{
+    margin-left:50px
+}
+
+.field-validation-error{
+    color:tomato;
+    font-family:Roboto;
+    font-size:12px;
+}
+
+
+.BackGround{
+    background-image:src(Images/19d89-cropped-hd-backgrounds-websites-350851-download-free-website-background-1920x1080-for-mobile-hd.jpg)
+}
+
+
+.Column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    color:snow;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+    .Column {
+        width: 100%;
+        display: block;
+    }
+}
+
+/* Add some shadows to create a card effect */
+.Card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    color: black;
+    background-color: snow;
+    margin: 5px;
+}
+
+/* Some left and right padding inside the container */
+.Container {
+    padding: 0 16px;
+    color:black;
+}
+
+    /* Clear floats */
+    .Container::after, .Row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+.Title {
+    color: tomato;
+}
+
+.Button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.Button:hover {
+        background-color: #555;
+}
+
+.Box {
+    border: 2px solid black;
+    box-shadow: 0 8px 16px 0 rgba(1, 0, 1, 0.6);
+    border-radius: 25px;
+    color: snow;
+    background-color:black;
+}
+
+#NewButton a{
+    color:tomato;
+}
+
+#EditButton a{
+    color:tomato;
+}
+
+
+.EditBox {
+    border: 2px solid black;
+    padding: 0px 0px;
+    box-shadow: 0 8px 16px 0 rgba(1, 0, 1, 0.6);
+    color: snow;
+    background-color: black;
+    margin: 10px;
+    border-radius: 25px;
+    height: 500px;
+    width: 500px;
+    display: grid;
+    position: relative;
+    left: 305px;
+    text-align: center;
+    padding:15px;
+}
+
+.EditBox label {
+        padding-left: 50px;
+
+}
+
+.EditBox input {
+
+        margin-left: 80px
+
+}
+
+#BackList a{
+    color:tomato;
+}
+
+
+.bg-1 {
+    background-color: tomato;
+    color: #ffffff;
+}
+
+.bg-2 {
+    background-color: #474e5d;
+    color: #ffffff;
+}
+
+.bg-3 {
+    background-color: #ffffff;
+    color: #555555;
+}
+
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+

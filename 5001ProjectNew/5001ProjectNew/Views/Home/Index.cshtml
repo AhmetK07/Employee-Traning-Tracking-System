@@ -1,0 +1,36 @@
+﻿@{
+
+}
+
+<html>
+
+<head>
+    <title> Welcome to the Training Management System</title>
+
+    <link href="~/Content/MyStyle.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <button type="button" class="TextButton"><div id="textbox">Please choose what type of usage you are going to make.</div></button>
+
+    <div id="SquareBox">
+
+        <div class="leftbox">
+            <div class="usagename"><p>Employee</p></div>
+            <div class="ClickEffect"><div class="disc"><div class="imgcenterbox"><a href="@Url.Action("Login","Login")"><img src="~/Content/Images/PngItem_2363781.png" style="height:120px; width:120px;" /></div></div></div>
+        </div>
+        <div class="rightbox">
+            <div class="usagename"><p>Instructor / Manager</p></div>
+            <div class="ClickEffect"><div class="disc"><div class="imgcenterbox"><a href="@Url.Action("Login","Login")"><img src="~/Content/Images/PngItem_349126.png" style="height:120px; width:120px;" /></a></div></div></div>
+            
+</div>
+
+    </div>
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+</body>
+
+</html>
